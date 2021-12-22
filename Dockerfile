@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libbz2-dev \
     libffi-dev \
     libreadline-dev \
+    libsqlite3-dev \
     libssl-dev \
     zlib1g-dev
 
