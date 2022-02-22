@@ -14,11 +14,11 @@ RUN apt-get update --quiet && \
         curl \
         git \
         libexpat1 \
-        $(apt-cache search --names-only 'libffi[0-9]+$' 2>/dev/null | awk '{print $1}') \
-        $(apt-cache search --names-only 'libmpdec[0-9]+$' 2>/dev/null | awk '{print $1}') \
+        libffi7 \
+        libmpdec2 \
         libncursesw5 \
-        $(apt-cache show libncursesw6 >/dev/null 2>&1 && echo libncursesw6 || true) \
-        $(apt-cache search --names-only 'libreadline[0-9]+$' 2>/dev/null | awk '{print $1}') \
+        libncursesw6 \
+        libreadline5 \
         libsqlite3-0 \
         libssl1.1 \
         lzma \
