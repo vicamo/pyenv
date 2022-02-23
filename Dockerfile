@@ -49,6 +49,7 @@ RUN pyenv latest install 3.6 && \
     pyenv latest install 3.7 && \
     pyenv latest install 3.8 && \
     pyenv latest install 3.9 && \
+    pyenv latest install 3.10 && \
     pyenv global $(pyenv versions --bare | tac) && \
     pyenv versions && \
     find ${PYENV_ROOT}/versions -depth \
