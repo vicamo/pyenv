@@ -40,9 +40,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     libbz2-dev \
     libffi-dev \
+    liblzma-dev \
     libreadline-dev \
     libsqlite3-dev \
     libssl-dev \
+    lzma-dev \
     zlib1g-dev
 
 RUN pyenv install 3.6 && \
