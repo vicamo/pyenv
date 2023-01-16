@@ -45,11 +45,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libssl-dev \
     zlib1g-dev
 
-RUN pyenv latest install 3.6 && \
-    pyenv latest install 3.7 && \
-    pyenv latest install 3.8 && \
-    pyenv latest install 3.9 && \
-    pyenv latest install 3.10 && \
+RUN pyenv install 3.6 && \
+    pyenv install 3.7 && \
+    pyenv install 3.8 && \
+    pyenv install 3.9 && \
+    pyenv install 3.10 && \
     pyenv global $(pyenv versions --bare | tac) && \
     pyenv versions && \
     find ${PYENV_ROOT}/versions -depth \
